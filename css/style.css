@@ -1,7 +1,7 @@
 /* google font css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-
+/*--------------- common css start ---------------*/
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +9,12 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    color: #F9F9FC;
+    color: black;
 }
+/*--------------- common css end ---------------*/
+
+/*--------------- header part start ---------------*/
 header{
     
     background-image: url('../images/drawing.jpg');
@@ -20,17 +25,16 @@ header{
     color: white;
 }
 
+/* top menubar start */
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
 }
-
 .fa-accusoft{
     font-size: 48px;
     color: #11967E;
 }
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -64,7 +68,9 @@ nav{
 .menu-link:hover:after{
     width: 100%;
 }
+/* top menubar end */
 
+/* banner part start */
 .banner{
     height: calc(768px - 100px);
     /* height: 768px; */
@@ -92,6 +98,7 @@ nav{
     padding: 12px 50px;
     border-radius: 8px;
     background-color: #11967E;
+    transition: background-color .2s ease-in;
     border: 3px solid #11967E;
     
     /* border: 2px solid white;
@@ -101,18 +108,141 @@ nav{
 .banner button:hover{
     color: white;
     border: 3px solid #11967E;
-    background: transparent;
+    background-color: transparent;
+    transition: background-color .2s ease-in;
 }
+/* banner part end */
 
- 
-.feature{
-    border: 2px solid tomato;
-    margin: 50px auto;
+/*--------------- header part end ---------------*/
+
+
+/*--------------- main css start ---------------*/
+
+ /* feature card part start  */
+#feature{
+    margin: 80px auto;
 }
 .section-title h1{
     text-align: center;
     font-size: 40px;
+    margin: 50px auto;
 }
 .highlight{
     color: #11967E;
 }
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 10px;
+}
+.card{
+    /* background-color: tomato; */
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    transition: box-shadow 1s;
+}
+.card-icon{
+    font-size: 48px;
+    color: #11967E;
+    transform: scale(1);
+    transition: transform 1s;
+}
+.card h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px auto;
+}
+.card p{
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+}
+.card:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 15px -5px rgb(0 0 0 / 50%);
+    transition: box-shadow .8s;
+}
+.card:hover .card-icon{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform .8s;
+}
+/* feature card part start  */
+
+
+
+
+
+
+
+
+
+/*--------------- main css end ---------------*/
+
+
+
+
+/*--------------- tablet css ---------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) { 
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 25px;
+    }
+}
+
+
+
+/*--------------- mobile css ---------------*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    nav{
+        display: none;
+    }
+    .banner{
+        height: 500px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .card{
+        border-radius: 10px;
+        box-shadow: 0 0 15px -5px rgb(0 0 0 / 50%);
+    }
+    .banner h1{
+        font-size: 32px;
+    }
+    .banner p{
+        font-size: 12px;
+        line-height: 20px;
+        margin: 30px 10px;
+        width: 100%;
+    }
+    .banner button{
+        font-size: 13px;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 8px;
+        background-color: #11967E;
+        transition: background-color .1s ease-in;
+        border: 3px solid #11967E;
+    }
+    #feature{
+        margin: 40px auto;
+    }
+    .section-title h1{
+        text-align: center;
+        font-size: 28px;
+        margin: 20px auto;
+    }
+}
+
+
