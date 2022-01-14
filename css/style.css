@@ -1,0 +1,118 @@
+/* google font css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    
+    background-image: url('../images/drawing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.fa-accusoft{
+    font-size: 48px;
+    color: #FF6363;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    
+}
+.navigation li{
+    list-style: none;
+    margin: 10px;
+}
+.navigation li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 30px 15px;
+    display: inline-block;
+}
+.menu-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #FF6363;
+    transition: width .7s;
+}
+.menu-link:hover:after{
+    width: 100%;
+}
+
+.banner{
+    height: calc(768px - 100px);
+    /* height: 768px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    /* padding: 30px 20px; */
+    text-align: center;
+}
+.banner h1{
+    font-size: 72px;
+}
+.banner p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    width: 70%;
+    margin: 50px 30px;
+}
+.banner button{
+    font-size: 18px;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 8px;
+    background-color: #FF6363;
+    border: 3px solid #FF6363;
+    border-bottom: 3px solid rgb(133, 60, 60);
+    /* border: 2px solid white;
+    color: #fff;
+    background: transparent; */
+}
+.banner button:hover{
+    color: white;
+    border: 3px solid #FF6363;
+    background: transparent;
+}
+
+/* 
+.feature{
+    border: 2px solid tomato;
+}
+.section-title h1{
+    margin: 50px auto;
+    text-align: center;
+    font-size: 40px;
+}
+.color-text{
+    color: #FF6363;
+} */
