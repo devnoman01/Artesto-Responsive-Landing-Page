@@ -163,19 +163,20 @@ nav{
     line-height: 22px;
 }
 .card:hover{
-    cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 15px -5px rgb(0 0 0 / 50%);
     transition: box-shadow .8s;
 }
 .card:hover .card-icon{
-    cursor: pointer;
     transform: scale(1.2);
     transition: transform .8s;
 }
 /* feature card part start  */
 
+/* two part section css start */
 
+
+/* two part section css end */
 
 
 
