@@ -12,6 +12,9 @@ body{
     color: #F9F9FC;
     color: black;
 }
+h1{
+    font-size: 36px;
+}
 /*--------------- common css end ---------------*/
 
 /*--------------- header part start ---------------*/
@@ -91,7 +94,7 @@ nav{
     width: 70%;
     margin: 50px 30px;
 }
-.banner button{
+.primary-button{
     font-size: 18px;
     color: white;
     padding: 12px 50px;
@@ -104,7 +107,7 @@ nav{
     color: #fff;
     background: transparent; */
 }
-.banner button:hover{
+.primary-button:hover{
     color: white;
     border: 3px solid #11967E;
     background-color: transparent;
@@ -174,7 +177,33 @@ nav{
 /* feature card part start  */
 
 /* two part section css start */
-
+#two-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#row{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.half-width p{
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-align: justify;
+    margin: 30px auto;
+}
+.half-width img{
+    width: 350px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* two part section css end */
 
