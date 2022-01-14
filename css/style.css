@@ -28,7 +28,7 @@ header{
 
 .fa-accusoft{
     font-size: 48px;
-    color: #FF6363;
+    color: #11967E;
 }
 
 nav{
@@ -58,7 +58,7 @@ nav{
     display: block;
     width: 0;
     height: 3px;
-    background: #FF6363;
+    background: #11967E;
     transition: width .7s;
 }
 .menu-link:hover:after{
@@ -91,28 +91,28 @@ nav{
     color: white;
     padding: 12px 50px;
     border-radius: 8px;
-    background-color: #FF6363;
-    border: 3px solid #FF6363;
-    border-bottom: 3px solid rgb(133, 60, 60);
+    background-color: #11967E;
+    border: 3px solid #11967E;
+    
     /* border: 2px solid white;
     color: #fff;
     background: transparent; */
 }
 .banner button:hover{
     color: white;
-    border: 3px solid #FF6363;
+    border: 3px solid #11967E;
     background: transparent;
 }
 
-/* 
+ 
 .feature{
     border: 2px solid tomato;
+    margin: 50px auto;
 }
 .section-title h1{
-    margin: 50px auto;
     text-align: center;
     font-size: 40px;
 }
-.color-text{
-    color: #FF6363;
-} */
+.highlight{
+    color: #11967E;
+}
