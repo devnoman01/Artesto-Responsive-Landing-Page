@@ -43,7 +43,6 @@ nav{
 }
 .navigation{
     display: flex;
-    
 }
 .navigation li{
     list-style: none;
@@ -83,7 +82,7 @@ nav{
     text-align: center;
 }
 .banner h1{
-    font-size: 72px;
+    font-size: 64px;
 }
 .banner p{
     font-size: 20px;
@@ -190,11 +189,59 @@ nav{
 
 
 /*--------------- tablet css ---------------*/
-@media only screen and (min-width: 481px) and (max-width: 768px) { 
+@media only screen and (min-width: 481px) and (max-width: 800px) { 
+    .fa-accusoft{
+        font-size: 36px;
+        color: #11967E;
+    }
+    nav{
+        height: 80px;
+    }
+    .navigation li{
+        list-style: none;
+    }
+    .navigation li a{
+        font-size: 13px;
+        padding: 2%;
+    }
+    .banner{
+        height: 400px;
+    }
     .cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 25px;
+        grid-gap: 20px;
+    }
+    .card:hover{
+        border-radius: 10px;
+        box-shadow: 0 0 15px -5px rgb(0 0 0 / 50%);
+    }
+    .banner h1{
+        font-size: 40px;
+    }
+    .banner p{
+        font-size: 14px;
+        letter-spacing: normal;
+        line-height: 20px;
+        margin: 30px 10px;
+        width: 70%;
+    }
+    .banner button{
+        font-size: 16px;
+        color: white;
+        padding: 8px 18px;
+        border-radius: 8px;
+        background-color: #11967E;
+        transition: background-color .1s ease-in;
+        border: 3px solid #11967E;
+    }
+    #feature{
+        margin: 50px auto;
+    }
+    .section-title h1{
+        text-align: center;
+        font-size: 28px;
+        margin: 20px auto;
     }
 }
 
@@ -222,12 +269,13 @@ nav{
     }
     .banner p{
         font-size: 12px;
+        letter-spacing: normal;
         line-height: 20px;
         margin: 30px 10px;
         width: 100%;
     }
     .banner button{
-        font-size: 13px;
+        font-size: 12px;
         color: white;
         padding: 8px 15px;
         border-radius: 8px;
